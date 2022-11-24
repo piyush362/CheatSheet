@@ -7,6 +7,7 @@
 
 
 # XMLHttpRequest
+<!-- 
 ````
     let request = new XMLHttpRequest();
     request. open ( ("GET" , "https: // jsonplaceholder. typicode. com/users");
@@ -56,4 +57,15 @@
      })
      catch((error) =>  console. error(error));
 
+``` -->
+
+
+```
+    fetch( 'https://jsonplaceholder. typicode. com/users')
+    .then( response => {
+        return response. json();
+    })
+        then( users => {
+        console. log( (users);
+    });
 ```
